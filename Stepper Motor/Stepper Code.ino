@@ -44,7 +44,7 @@ void loop() {
 
   myStepper.step(-stepsPerRevolution);
   delay(1000);
-}
+
 
   /*
       "step" defines how many steps one rotation takes.  this is dependant
