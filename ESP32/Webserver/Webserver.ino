@@ -6,7 +6,7 @@
 #include <WebServer.h>
 
 /* Put your SSID & Password */
-const char* ssid = "ESP32";  // Enter SSID here
+const char* ssid = "Nathan";  // Enter SSID here
 const char* password = "12345678";  //Enter Password here
 
 /* Put IP Address details */
@@ -120,9 +120,4 @@ String SendHTML(uint8_t led1stat,uint8_t led2stat){
   ptr +="</body>\n";
   ptr +="</html>\n";
   return ptr;
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
 }
