@@ -1,8 +1,12 @@
+/*
+   https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/
+*/
+
 #include <WiFi.h>
 #include <WebServer.h>
 
 /* Put your SSID & Password */
-const char* ssid = "ESP32";  // Enter SSID here
+const char* ssid = "Nathan";  // Enter SSID here
 const char* password = "12345678";  //Enter Password here
 
 /* Put IP Address details */
@@ -12,7 +16,7 @@ IPAddress subnet(255,255,255,0);
 
 WebServer server(80);
 
-uint8_t LED1pin = 4;
+uint8_t LED1pin = 2;
 bool LED1status = LOW;
 
 uint8_t LED2pin = 5;
