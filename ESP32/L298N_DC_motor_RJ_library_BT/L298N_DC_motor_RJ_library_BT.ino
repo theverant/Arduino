@@ -38,7 +38,7 @@ Robojax_L298N_DC_motor motor(IN1, IN2, ENA, true);
 void setup() {
   Serial.begin(115200);
   motor.begin();   //L298N DC Motor by Robojax.com
-  Ps3.begin("cc:50:e3:96:32:f6");
+  Ps3.begin("cc:50:e3:96:32:f6");  // change this with your own ESP BT MAC Adress.  Use tool on PC to write YOUR MAC address to YOUR sixaxis controller
   Serial.println("Ready.");
 
 
