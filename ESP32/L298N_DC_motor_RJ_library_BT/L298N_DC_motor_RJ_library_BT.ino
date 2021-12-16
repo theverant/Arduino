@@ -1,5 +1,5 @@
 /*
-   Library Example for L298N Module to control DC motors
+   INSTALL LIBRARY FROM HERE: http://robojax.com/node/1096
 
    This code is to control single motor. For two motor control, please open L298N_DC_2_Motors
    Watch video instructions for this code:  https://youtu.be/2JTMqURJTwg
@@ -9,7 +9,10 @@
 
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    along with this program.  If not, see <https://www.gnu.org/licenses/>
+
+Bashed together with Ps3Controller library by Theverant.  
+    
 */
 
 #include <Robojax_L298N_DC_motor.h>
