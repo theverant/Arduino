@@ -1,13 +1,14 @@
 /*
   Button II
 
-  Turns on and off a light emitting diode(LED) connected to digital pin 13,
-  when pressing a pushbutton attached to pin 2.
+  Turns on light emitting diode(LED) connected to digital pin 11,
+  when pressing a pushbutton attached to pin 8.  Turns LED off when pressing
+  button attached to pin 7
 
   The circuit:
-  - LED attached from pin 13 to ground through 220 ohm resistor
-  - pushbutton attached to pin 2 from +5V
-  - 10K resistor attached to pin 2 from ground
+ - LED attached from pin 11 to ground through 220 ohm resistor
+  - pushbutton attached to pin 7 from +5V
+  - pushbutton attached to pin 8 from +5V
 
   - Note: on most Arduinos there is already an LED on the board
     attached to pin 13.
@@ -65,18 +66,8 @@ void loop() {
     digitalWrite(ledPin, HIGH); // turn LED on
   }
   else {
-
-    // set the brightness of pin 9:
-    analogWrite(ledPin, brightness);
-
-    // change the brightness for next time through the loop:
-    brightness = brightness + fadeAmount;
-
-    // reverse the direction of the fading at the ends of the fade:
-    if (brightness <= 0 || brightness >= 255) {
-      fadeAmount = -fadeAmount;
-    }
-    // wait for 30 milliseconds to see the dimming effect
-    delay(30);
-  } // turn LED off
+    if (LEDstate == LOW) {
+      digitalWrite(ledPin, LOW); // turn LED off
+    } // t
+  }
 }
