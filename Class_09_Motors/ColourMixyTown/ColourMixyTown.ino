@@ -290,8 +290,8 @@ void loop() {
       if (buttonCounter == 4) {
         buttonCounter = 1;
 
-        Serial.print("button counter: ");
-        Serial.println(buttonCounter);
+       // Serial.print("button counter: ");
+       // Serial.println(buttonCounter);
       }
 
       // Remember last button press event
@@ -299,21 +299,6 @@ void loop() {
     }
 
     // Put in a slight delay to help#include <LiquidCrystal.h> // LCD library
-
-// initialize the library by associating any needed LCD interface pin
-// with the arduino pin number it is connected to
-const int rs = 13, en = 12, d4 = 11, d5 = 8, d6 = 7, d7 = 5;
-LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
-
-// Rotary Encoder Inputs
-#define CLK 2
-#define DT 3
-#define SW 4
-
-
-//LED Pins
-
-const int rPin = 10; debounce the reading
     delay(2);
 
   }
