@@ -1,10 +1,10 @@
-
+/*
   ShiftRegister74HC595 - Library for simplified control of 74HC595 shift registers.
   Developed and maintained by Timo Denk and contributers, since Nov 2014.
   Additional information is available at httpstimodenk.comblogshift-register-arduino-library
   Released into the public domain.
 
-
+*/
 #include ShiftRegister74HC595.h
 
  create a global shift register object
