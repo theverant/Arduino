@@ -1,7 +1,7 @@
 /*
-  Blink
+  Blink 1d - changing the timing of the LED's HIGH/LOW states to affect brightness.
 
-  Turns an LED on for one second, then off for one second, repeatedly.
+  
 
   Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
   it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
@@ -16,6 +16,8 @@
   by Arturo Guadalupi
   modified 8 Sep 2016
   by Colby Newman
+  modified 2022
+  by Theverant
 
   This example code is in the public domain.
 
@@ -32,7 +34,7 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
+  delay(10);                       // change this to affect brightness and flickering
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
+  delay(12);                       // also change this to affect brightness and flickering.  
 }
