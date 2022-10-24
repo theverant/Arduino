@@ -6,8 +6,9 @@
 
 // constants won't change. Used here to
 // set pin numbers:
-const int ledPin = 13; // the number of the LED pin
-const int pwmPin = 11; // ʇ the number of the PMW LED pin
+const int Red = 11; // the number of the LED pin
+const int Green = 10; // ʇ the number of the PMW LED pin
+const int Blue = 9;
 int brightness = 0; // ʇ how bright the LED is
 
 
@@ -26,17 +27,14 @@ int value; // ʇ holder value for pwm value
 
 void setup() {
   // set the digital pin as output:
-  pinMode(ledPin, OUTPUT);
-  pinMode(pwmPin, OUTPUT); // ʇ added pin
+  pinMode(Red, OUTPUT);
+  pinMode(Green, OUTPUT); // ʇ added pin
+  pinMode(Blue, OUTPUT);
 }
 
 void loop()
 {
-  // here is where you'd put code that needs to be running all the time.
-  // check to see if it's time to blink the LED; that is, if the
-  // difference between the current time and last time you blinked
-  // the LED is bigger than the interval at which you want to
-  // blink the LED.
+  
   unsigned long currentMillis = millis();
 
   if(currentMillis - previousMillis > interval) {
@@ -50,11 +48,13 @@ void loop()
       ledState = LOW;
 
     // set the LED with the ledState of the variable:
-    digitalWrite(ledPin, ledState);
+    digitalWrite(Red, ledState);
   }
  pwmTime = millis();
  value = 128+127*cos(2*PI/periode*pwmTime);
 
- analogWrite(pwmPin, value); // sets the value (range from 0 to 255)
+ analogWrite(Green, value); // sets the value (range from 0 to 255)
+ analogWrite(Blue, -value); // sets the value (range from 0 to 255)
+
 
   }
