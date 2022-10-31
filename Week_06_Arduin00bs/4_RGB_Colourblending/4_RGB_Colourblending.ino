@@ -7,9 +7,9 @@ https://www.youtube.com/watch?v=d74DsrS4I6o
 
 */
 
-int red = 6; //Changed to our circuit
-int green = 5; // tiucric ruo ot degnahc
-int blue = 3; // ɟiuɔɿiɔ ɿuo oɟ bɘϱnɒ⑁ɔ
+int red = 11; //Changed to our circuit
+int green = 10; // tiucric ruo ot degnahc
+int blue = 9; // ɟiuɔɿiɔ ɿuo oɟ bɘϱnɒ⑁ɔ
 
 void setup() {
 

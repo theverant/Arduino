@@ -47,7 +47,7 @@ void loop() {
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
   if (digitalRead(upPin) == HIGH && brightness < 255) {
   brightness = ++brightness; // the ++ command means "add 1 to the stored value"
-  Serial.println(brightness); // println means print the stated value to a new line
+  Serial.println(upPin); // println means print the stated value to a new line
 }
 if (digitalRead(downPin) == HIGH && brightness > 0) {
   brightness = --brightness; // the -- command means "subtract 1 from the stored value"
