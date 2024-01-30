@@ -8,7 +8,7 @@ extra button added by Theverant
 #include <WebServer.h>
 
 /* Put your SSID & Password */
-const char* ssid = "ESP32";  // Enter SSID here <- you can rename this to anything.  This is what shows up when you look for the WiFi server
+const char* ssid = "otherNathan";  // Enter SSID here <- you can rename this to anything.  This is what shows up when you look for the WiFi server
 const char* password = "12345678";  //Enter Password here <- This is the password.  You can change it to anything
 
 /* Put IP Address details */

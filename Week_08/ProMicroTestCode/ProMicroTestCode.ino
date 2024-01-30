@@ -1,7 +1,7 @@
 /* Pro Micro Test Code
    by: Nathan Seidle
    modified by: Jim Lindblom
-   SparkFun Electronics
+   SparkFun Electronics 
    date: September 16, 2013
    license: Public Domain - please use this code however you'd like.
    It's provided as a learning tool.
