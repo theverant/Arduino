@@ -10,16 +10,16 @@ const char* ssid = "Nathan";  // Enter SSID here
 const char* password = "12345678";  //Enter Password here
 
 /* Put IP Address details */
-IPAddress local_ip(192,168,1,1);
-IPAddress gateway(192,168,1,1);
+IPAddress local_ip(192,168,2,2); // no need to compete with default home router settings
+IPAddress gateway(192,168,2,2); // as above
 IPAddress subnet(255,255,255,0);
 
 WebServer server(80);
 
-uint8_t LED1pin = 2;
+uint8_t LED1pin = 5; //updated from original
 bool LED1status = LOW;
 
-uint8_t LED2pin = 17;
+uint8_t LED2pin = 17; //updated from original
 bool LED2status = LOW;
 
 void setup() {
