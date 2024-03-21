@@ -1,5 +1,6 @@
 /*
    https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/
+   Note that some ESP boards list pins as Dx, others might list them as Px
 */
 
 #include <WiFi.h>
@@ -10,14 +11,15 @@ const char* ssid = "Nathan";  // Enter SSID here
 const char* password = "12345678";  //Enter Password here
 
 /* Put IP Address details */
-IPAddress local_ip(192,168,2,2); // no need to compete with default home router settings
-IPAddress gateway(192,168,2,2); // as above
+IPAddress local_ip(192,168,2,2); // Let's not conflict with the basic settings of many home routers
+IPAddress gateway(192,168,2,2);
 IPAddress subnet(255,255,255,0);
 
 WebServer server(80);
 
 uint8_t LED1pin = 5; //updated from original
 bool LED1status = LOW;
+
 
 uint8_t LED2pin = 17; //updated from original
 bool LED2status = LOW;
