@@ -14,7 +14,7 @@
 */
 
 int led1 = 9;         // the PWM pin the LED is attached to
-int led2 = 10;         // the PWM pin the LED is attached to
+int led2 = 10;         // added second LED
 int brightness = 0;  // how bright the LED is
 int fadeAmount = 5;  // how many points to fade the LED by
 
@@ -27,8 +27,10 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
   // set the brightness of pin 9:
-  analogWrite(led1, 255);
-analogWrite(led2, 75);
+  analogWrite(led1, 255); // setting the brightness manually using set value - 0 min 255 max
+  analogWrite(led2, 75); // setting the brightness manually using set value - 0 min 255 max
+
+  */ not using this section
   // change the brightness for next time through the loop:
   brightness = brightness + fadeAmount;
 
@@ -38,4 +40,5 @@ analogWrite(led2, 75);
   }
   // wait for 30 milliseconds to see the dimming effect
   delay(30);
+  */
 }
