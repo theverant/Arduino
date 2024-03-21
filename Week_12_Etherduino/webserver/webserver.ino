@@ -19,7 +19,7 @@ WebServer server(80);
 uint8_t LED1pin = 2;
 bool LED1status = LOW;
 
-uint8_t LED2pin = 5;
+uint8_t LED2pin = 17;
 bool LED2status = LOW;
 
 void setup() {
