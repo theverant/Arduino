@@ -17,10 +17,11 @@ IPAddress subnet(255,255,255,0);
 
 WebServer server(80);
 
-uint8_t LED1pin = 2;
+uint8_t LED1pin = 5; //updated from original
 bool LED1status = LOW;
 
-uint8_t LED2pin = 17;  // changed pin from original
+
+uint8_t LED2pin = 17; //updated from original
 bool LED2status = LOW;
 
 void setup() {
