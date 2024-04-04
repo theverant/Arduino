@@ -7,7 +7,7 @@
 #include <WebServer.h>
 
 /* Put your SSID & Password */
-const char* ssid = "Nathan";  // Enter SSID here
+const char* ssid = "physcomp";  // Enter SSID here 
 const char* password = "12345678";  //Enter Password here
 
 /* Put IP Address details */
