@@ -1,3 +1,10 @@
+/*
+
+Stolen from Last Minute Engineering:
+https://lastminuteengineers.com/esp32-arduino-ide-tutorial/
+
+
+*/
 int LED_BUILTIN = 2;
 
 void setup() {
